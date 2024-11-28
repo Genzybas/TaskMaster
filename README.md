@@ -1,103 +1,85 @@
-# Task Manager App
+# **TaskMaster - A Task Management System**
 
-This app is developed to keep you on Track!
+TaskMaster is a full-stack task management web application designed to help users efficiently organize, prioritize, and track their tasks. This README outlines the key features, tech stack, setup instructions, and live demo links for the project.
 
-![user-profile](client/public/images/user-profile.png)
+---
 
-## Built With
- <table>
- 	<tbody>
- 		<tr>
- 			<td align="Center" width="30%">
- 				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
- 					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML">
- 				</a> <br> HTML
- 			</td>
- 			<td align="Center" width="30%">
- 				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
- 					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS">
- 				</a> <br> CSS
- 			</td>
- 			<td align="Center" width="30%">
- 				<a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
- 					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap CSS">
- 				</a> <br> Bootstrap CSS
- 			</td>
- 		</tr>
- 	</tbody>
- </table>
- <table>
- 	<tbody>
- 		<tr>
- 			<td align="Center" width="30%">
- 				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
- 					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript">
- 				</a> <br> JavaScript
- 			</td>
- 			<td align="Center" width="30%">
- 				<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
- 					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="Nodejs">
- 				</a> <br> Nodejs
- 			</td>
- 			<td align="Center" width="30%">
- 				<a href="https://expressjs.com" target="_blank" rel="noreferrer">
- 					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="ExpressJS">
- 				</a> <br> ExpressJS
- 			</td>
- 			<td align="Center" width="30%">
- 				<a href="https://mongodb.com" target="_blank" rel="noreferrer">
- 					<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB">
- 				</a> <br> MongoDB
- 			</td>
- 		</tr>
- 	</tbody>
- </table>
+## **Overview**
 
- ## Getting Started
+TaskMaster enables users to:
+- Create, update, and delete tasks.
+- Organize tasks by priority and deadlines.
+- Search and filter tasks for better task tracking.
 
- To get a local copy in your machine and running up follow the following steps.
+The project ensures scalability, security, and optimized performance for a smooth user experience.
 
- ### Prerequisites
- Before installation, make sure you have already installed the following tools: 
+---
 
- - [Git](https://git-scm.com/downloads)
- - [Nodejs](https://nodejs.org/en/download/)
- - [MongoDB](https://mongodb.com/download/)
+## **Tech Stack**
 
- ### Installation 
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Testing**: Jest, Supertest  
+- **Deployment**: Fly.io (Backend), Vercel (Frontend)  
 
- 1. [Fork](https://github.com/rupali-codes/Task-Manager-Api/fork) this repo, click on the fork icon in the top-right corner to get started
+---
 
- 2. Clone the repo, you can use the following the command: 
- 	 ```bash
-     git clone https://github.com/<your-github-username>/Task-Manager-Api
-     ```
+## **Features**
 
- 3. Navigate to project directory
- 	```bash
-    cd Task-Manager-Api
-    ```
+### **1. User Authentication**
+- Secure user registration and login using JWT.
+- Password hashing with bcrypt for enhanced security.
 
- 4. Install dependencies
- 	```bash
-    npm install
-    ```
+### **2. Task Management**
+- Add tasks with the following attributes:
+  - Title
+  - Description
+  - Priority (Low, Medium, High)
+  - Deadline
+- Update and delete tasks seamlessly.
 
- 5. Create your `.env` file take reference from `sample.env`
+### **3. Task Filtering and Searching**
+- Filter tasks by priority or due date.
+- Search tasks using keywords in the title or description.
 
- 6. Start server 
- 	```bash
-    npm start
-    ```
+### **4. User Interface**
+- Fully responsive design.
+- AJAX and Fetch API for asynchronous task management.
 
-    OR
+### **5. Security Features**
+- Input validation using Joi.
+- Protection against XSS and SQL Injection attacks.
 
+---
 
-    ```bash
-    npm run dev
-    ```
+## **Database Design**
 
-### View [Demo](https://rups-task-manager.herokuapp.com)
+### **User Schema**
+```json
+{
+  "id": "string",
+  "name": "string",
+  "email": "string",
+  "password": "hashed_string"
+}
+
+Testing
+Tools: Jest, Supertest
+Key Tests:
+User authentication routes.
+CRUD operations for tasks.
+Input validation and error handling.
+Test Results:
+
+20+ test cases covering core functionalities and edge cases.
+Deployment
+Backend: Deployed on Fly.io
+Backend API 
+Frontend: Deployed on Vercel
+Frontend App
+
+### View [Demo](https://.com)
 
 ## Become a contributor
 
